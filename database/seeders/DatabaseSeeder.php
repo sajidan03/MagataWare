@@ -29,11 +29,11 @@ class DatabaseSeeder extends Seeder
         User :: create([
             'id' => 2,
             'name' => 'Rahman',
-            'email' => 'rahmannurpadilah@gmail.com',
-            'password' => bcrypt('12345'),
+            'email' => 'sajidan',
+            'password' => bcrypt('sajidan'),
             'level' => 'Member'
         ]);
-        
+
         Member :: create([
             'id' => 1,
             'name' => 'Rahman',
@@ -89,7 +89,7 @@ class DatabaseSeeder extends Seeder
             'id' => 3,
             'name' => 'Ayam Panggang',
             'price' => 25000,
-            'image' => 'ayam-panggang.jpe',
+            'image' => 'ayam-panggang.jpg',
             'descriptions' => 'Ayam panggang adalah hidangan yang dibuat dengan cara memanggang ayam hingga matang sempurna, menghasilkan tekstur yang juicy di dalam dan renyah di luar. Hidangan ini biasanya dibumbui dengan campuran rempah-rempah seperti bawang putih, bawang merah, kunyit, jahe, ketumbar, kecap, atau madu, tergantung pada variasi resepnya. Ayam panggang memiliki rasa yang kaya dan aroma khas dari proses pemanggangan.',
             'categories_id' => 3,
         ]);
@@ -98,7 +98,7 @@ class DatabaseSeeder extends Seeder
             'id' => 4,
             'name' => 'Ayam Panggang',
             'price' => 25000,
-            'image' => 'ayam-panggang.jpe',
+            'image' => 'ayam-panggang.jpg',
             'descriptions' => 'Ayam panggang adalah hidangan yang dibuat dengan cara memanggang ayam hingga matang sempurna, menghasilkan tekstur yang juicy di dalam dan renyah di luar. Hidangan ini biasanya dibumbui dengan campuran rempah-rempah seperti bawang putih, bawang merah, kunyit, jahe, ketumbar, kecap, atau madu, tergantung pada variasi resepnya. Ayam panggang memiliki rasa yang kaya dan aroma khas dari proses pemanggangan.',
             'categories_id' => 3,
         ]);
@@ -107,7 +107,7 @@ class DatabaseSeeder extends Seeder
             'id' =>5,
             'name' => 'Ayam Panggang',
             'price' => 25000,
-            'image' => 'ayam-panggang.jpe',
+            'image' => 'ayam-panggang.jpg',
             'descriptions' => 'Ayam panggang adalah hidangan yang dibuat dengan cara memanggang ayam hingga matang sempurna, menghasilkan tekstur yang juicy di dalam dan renyah di luar. Hidangan ini biasanya dibumbui dengan campuran rempah-rempah seperti bawang putih, bawang merah, kunyit, jahe, ketumbar, kecap, atau madu, tergantung pada variasi resepnya. Ayam panggang memiliki rasa yang kaya dan aroma khas dari proses pemanggangan.',
             'categories_id' => 3,
         ]);
@@ -116,7 +116,7 @@ class DatabaseSeeder extends Seeder
             'id' =>6,
             'name' => 'Ayam Panggang',
             'price' => 25000,
-            'image' => 'ayam-panggang.jpe',
+            'image' => 'ayam-panggang.jpg',
             'descriptions' => 'Ayam panggang adalah hidangan yang dibuat dengan cara memanggang ayam hingga matang sempurna, menghasilkan tekstur yang juicy di dalam dan renyah di luar. Hidangan ini biasanya dibumbui dengan campuran rempah-rempah seperti bawang putih, bawang merah, kunyit, jahe, ketumbar, kecap, atau madu, tergantung pada variasi resepnya. Ayam panggang memiliki rasa yang kaya dan aroma khas dari proses pemanggangan.',
             'categories_id' => 3,
         ]);
@@ -125,7 +125,7 @@ class DatabaseSeeder extends Seeder
             'id' => 7,
             'name' => 'Ayam Panggang',
             'price' => 25000,
-            'image' => 'ayam-panggang.jpe',
+            'image' => 'ayam-panggang.jpg',
             'descriptions' => 'Ayam panggang adalah hidangan yang dibuat dengan cara memanggang ayam hingga matang sempurna, menghasilkan tekstur yang juicy di dalam dan renyah di luar. Hidangan ini biasanya dibumbui dengan campuran rempah-rempah seperti bawang putih, bawang merah, kunyit, jahe, ketumbar, kecap, atau madu, tergantung pada variasi resepnya. Ayam panggang memiliki rasa yang kaya dan aroma khas dari proses pemanggangan.',
             'categories_id' => 3,
         ]);
@@ -134,7 +134,7 @@ class DatabaseSeeder extends Seeder
             'id' => 8,
             'name' => 'Ayam Panggang',
             'price' => 25000,
-            'image' => 'ayam-panggang.jpe',
+            'image' => 'ayam-panggang.jpg',
             'descriptions' => 'Ayam panggang adalah hidangan yang dibuat dengan cara memanggang ayam hingga matang sempurna, menghasilkan tekstur yang juicy di dalam dan renyah di luar. Hidangan ini biasanya dibumbui dengan campuran rempah-rempah seperti bawang putih, bawang merah, kunyit, jahe, ketumbar, kecap, atau madu, tergantung pada variasi resepnya. Ayam panggang memiliki rasa yang kaya dan aroma khas dari proses pemanggangan.',
             'categories_id' => 3,
         ]);
