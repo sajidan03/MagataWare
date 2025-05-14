@@ -72,6 +72,21 @@ class CartCon extends Controller
             'qty' => max($cart->qty - 1, 1)
         ]);
 
+        // $cart->update([
+        //     'qty' => max($cart->qty - 1, 1)
+        // ]);
         return redirect('/cart');
     }
+    public function struk(){
+        return view("struk");
+    }
+        public function showStruk(Request $request)
+    {
+        $nama = $request->nama;
+        $email = $request->email;
+        $total = $request->total;
+
+        return view('struk', compact('nama', 'email', 'total'));
+    }
+
 }

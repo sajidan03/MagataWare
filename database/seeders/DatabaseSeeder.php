@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         User :: create([
             'id' => 2,
             'name' => 'Rahman',
-            'email' => 'sajidan',
+            'email' => 'sajidan@gmail.com',
             'password' => bcrypt('sajidan'),
             'level' => 'Member'
         ]);

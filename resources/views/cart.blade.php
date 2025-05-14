@@ -60,10 +60,16 @@
                 </table>
                 <div class="container">
                     <h5 style="text-align: end">total : {{ $total }}</h5>
-                    <div class="container d-flex justify-content-between">
-                        <button>Halo</button>
-                        <button>Halo</button>
-                    </div>
+                    <form action="{{ route('checkout.struk') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="nama" value="{{ Auth::user()->name }}">
+                        <input type="hidden" name="email" value="{{ Auth::user()->email }}">
+                        <input type="hidden" name="total" value="{{ $total }}">
+
+                        <div class="container d-flex justify-content-end mt-3">
+                            <button type="submit" class="btn btn-success btn-sm rounded-pill shadow">Checkout</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </form>
