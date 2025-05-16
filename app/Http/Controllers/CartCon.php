@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Cart;
 use App\Models\Product;
+use Illuminate\Container\Attributes\Auth;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
 use PhpParser\Node\Expr\Cast\String_;
+use Carbon\Carbon;
 
 class CartCon extends Controller
 {
@@ -77,10 +79,7 @@ class CartCon extends Controller
         // ]);
         return redirect('/cart');
     }
-    public function struk(){
-        return view("struk");
-    }
-        public function showStruk(Request $request)
+    public function showStruk(Request $request)
     {
         $nama = $request->nama;
         $email = $request->email;
@@ -88,5 +87,7 @@ class CartCon extends Controller
 
         return view('struk', compact('nama', 'email', 'total'));
     }
-
+    public function checkout(){
+        $cart = Cart::where("members_id", Auth::user()->member->id)->get();
+    }
 }

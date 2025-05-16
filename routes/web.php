@@ -26,6 +26,8 @@ Route::middleware(['member'])->group(function(){
     Route::get('/cart/{id}', [CartCon::class, 'store'])->name('keranjang');
     Route::post('/cart/tambah/{id}', [CartCon::class, 'tambah'])->name('cart-tambah');
     Route::post('/cart/kurang/{id}', [CartCon::class, 'kurang'])->name('cart-kurang');
+    Route::post('/checkout-struk', [CartCon::class, 'showStruk'])->name('checkout.struk');
+
 });
 
 Route::middleware(['admin'])->group(function(){
@@ -62,5 +64,3 @@ Route::post('/administrator/auth', [UserCon::class, 'auth'])->name('admin.auth')
 Route::get('/member/login', [UserCon::class, 'member'])->name('member.login');
 Route::post('/member/auth', [UserCon::class, 'authmember'])->name('member.auth');
 Route::get('/administrator/logout', [UserCon::class, 'logout'])->name('admin.logout');
-Route::get("/struk", [CartCon::class, 'struk']);
-Route::post('/checkout-struk', [CartCon::class, 'showStruk'])->name('checkout.struk');
